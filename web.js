@@ -9,7 +9,7 @@ app.get('/', function(request, response) {
 
     var buf = fs.readFileSync("index.html");
 
-    response.send(buf);
+    response.send(buf.toString());
 });
 
 
